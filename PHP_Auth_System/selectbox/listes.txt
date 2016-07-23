@@ -1,0 +1,37 @@
+Objectif:
+Création d'un mini système de gestion de listes
+
+Composants:
+- Liste selectable
+- Champ input
+
+MCD:
+
+Tables:
+collaborateurs => list_profession
+contrats => array(list_collab,
+                  list_vehicules,
+            );
+frais
+vehicules => array(nom_loueur,
+                   type_vehicule,
+                   marque,
+                   boite_vitesse,
+                   carburant,
+                   type_detention
+            );
+
+Selection des listes et envoi de chaque colonne ENUM dans une table intermédiaire groupe_listes
+
+9 listes > TABLE groupe_listes
+
+
+Schéma d'utilisation:
+L'utilisateur selectionne une option dans la liste
+
+  S'il choisi toute option sauf "autre", on affiche une des options
+  Sinon s'il choisi l'option "autre", on affiche un autre input et on récupère la valeur entrée
+
+
+Demo:
+http://jsfiddle.net/g6px8h14/1/
