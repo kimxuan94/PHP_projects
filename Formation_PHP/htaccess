@@ -1,0 +1,6 @@
+#Use htaccess pwd protection method
+
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile C:\xampp\htdocs\tpphp\.htpasswd
+Require valid-user
